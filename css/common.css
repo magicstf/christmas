@@ -1,7 +1,7 @@
 .container,.window,.wood {
     overflow:hidden
 }
-a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
     margin:0;
     padding:0;
     border:0;
@@ -11,7 +11,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .cloudy,.moon {
     border-radius:50%
 }
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
+article,aside,details,figcaption,figure,footer,header,menu,nav,section {
     display:block
 }
 body {
@@ -25,7 +25,6 @@ blockquote,q {
 }
 blockquote:after,blockquote:before,q:after,q:before {
     content:'';
-    content:none
 }
 table {
     border-collapse:collapse;
@@ -77,15 +76,17 @@ table {
         -webkit-transform:scale(1);
         opacity:1
     }
-}@-moz-keyframes effectIn {
+}
+@-moz-keyframes effectIn {
      100% {
          -moz-transform:scale(1);
          opacity:1
      }
- }.container .page-a {
+ }
+.container .page-a {
       width:100%;
       height:100%;
-      background-image:url(http://img.mukewang.com/565d07770001790814410901.png);
+    background-image: url(../images/a/page-a-bg.png);
       position:absolute;
       z-index:5
   }
@@ -98,7 +99,7 @@ table {
     height:4.24rem;
     bottom:0;
     left:1rem;
-    background-image:url(http://img.mukewang.com/565d07d30001c97605420424.png);
+    background-image:url(../images/a/trees.png);
     background-size:200% 100%;
     -webkit-animation:treeAnim 1s steps(2) infinite;
     -moz-animation:treeAnim 1s steps(2) infinite
@@ -117,7 +118,8 @@ table {
      100% {
          background-position:400% 100%
      }
- }.chs-boy {
+ }
+.chs-boy {
       width:5rem;
       height:1.5rem;
       position:absolute;
@@ -125,7 +127,7 @@ table {
       top:.1rem;
       right:-3rem;
       transform:scale(.1);
-      background:url(http://img.mukewang.com/565d07490001365329660269.png) -300% -100%;
+      background:url(../images/a/boy-sleigh-car.png) -300% -100%;
       background-size:400% 100%
   }
 .chs-boy-deer {
@@ -139,14 +141,16 @@ table {
     100% {
         background-position:-300% 100%
     }
-}@-moz-keyframes chsBoyDeer {
+}
+@-moz-keyframes chsBoyDeer {
      0% {
          background-position:0 100%
      }
      100% {
          background-position:-300% 100%
      }
- }.moon {
+ }
+.moon {
       background:#FCF0BC;
       width:2rem;
       height:2rem;
@@ -164,14 +168,16 @@ table {
     50% {
         box-shadow:0 0 1rem #FCF0BC
     }
-}@-moz-keyframes nucleus {
+}
+@-moz-keyframes nucleus {
      0%,100% {
          box-shadow:0 0 0 transparent
      }
      50% {
          box-shadow:0 0 1rem #FCF0BC
      }
- }.page-a svg {
+ }
+.page-a svg {
       width:1.2rem;
       height:1.2rem;
       left:1.75rem;
@@ -194,11 +200,13 @@ table {
     50% {
         -webkit-transform:translateY(-.1rem)
     }
-}@-moz-keyframes cloudy {
+}
+@-moz-keyframes cloudy {
      50% {
          -moz-transform:translateY(-.1rem)
      }
- }.window {
+ }
+.window {
       width:2.6rem;
       height:1.5rem;
       position:absolute;
@@ -209,8 +217,8 @@ table {
       -moz-perspective:500px
   }
 .window-content {
+    transform-style:preserve-3d;
     -webkit-transform-style:preserve-3d;
-    -moz-transform-style:preserve-3d;
     width:91%;
     margin:0 auto;
     height:100%
@@ -321,7 +329,8 @@ table {
         background-position:-300% 100%;
         top:4rem
     }
-}@-moz-keyframes standUp {
+}
+@-moz-keyframes standUp {
      0% {
          background-position:0 100%
      }
@@ -329,7 +338,8 @@ table {
          background-position:-300% 100%;
          top:4rem
      }
- }.girl-throwBook {
+ }
+.girl-throwBook {
       top:4rem;
       left:.5rem;
       -webkit-animation:throwBook .3s steps(2,start) forwards;
@@ -342,14 +352,16 @@ table {
     100% {
         background-position:-500% 100%
     }
-}@-moz-keyframes throwBook {
+}
+@-moz-keyframes throwBook {
      0% {
          background-position:-300% 100%
      }
      100% {
          background-position:-500% 100%
      }
- }.girl-walk {
+ }
+.girl-walk {
       left:1rem;
       -webkit-animation:girlWalk .9s steps(4,start) infinite;
       -moz-animation:girlWalk .9s steps(4,start) infinite
@@ -361,14 +373,16 @@ table {
     100% {
         background-position:-900% 100%
     }
-}@-moz-keyframes girlWalk {
+}
+@-moz-keyframes girlWalk {
      0% {
          background-position:-500% 100%
      }
      100% {
          background-position:-900% 100%
      }
- }.girl-stand {
+ }
+.girl-stand {
       top:4rem;
       background-position:-1000% 100%
   }
@@ -383,14 +397,16 @@ table {
     100% {
         background-position:-1200% 100%
     }
-}@-moz-keyframes girlChoose {
+}
+@-moz-keyframes girlChoose {
      0% {
          background-position:-1000% 100%
      }
      100% {
          background-position:-1200% 100%
      }
- }.girl-weep {
+ }
+.girl-weep {
       -webkit-animation:girlWeep 450ms steps(4,end) forwards infinite;
       -moz-animation:girlWeep 450ms steps(4,end) forwards infinite
   }
@@ -401,14 +417,16 @@ table {
     100% {
         background-position:-1700% 100%
     }
-}@-moz-keyframes girlWeep {
+}
+@-moz-keyframes girlWeep {
      0% {
          background-position:-1300% 100%
      }
      100% {
          background-position:-1700% 100%
      }
- }.girl-hug {
+ }
+.girl-hug {
       -webkit-animation:girlHug 450ms steps(3,end) forwards;
       -moz-animation:girlHug 450ms steps(3,end) forwards
   }
@@ -420,7 +438,8 @@ table {
         left:7.85rem;
         background-position:-2000% 100%
     }
-}@-moz-keyframes girlHug {
+}
+@-moz-keyframes girlHug {
      0% {
          background-position:-1700% 100%
      }
@@ -428,7 +447,8 @@ table {
          left:7.85rem;
          background-position:-2000% 100%
      }
- }.cat {
+ }
+.cat {
       width:1.36rem;
       height:.88rem;
       position:absolute;
@@ -465,14 +485,16 @@ table {
     100% {
         background-position:-400% 100%
     }
-}@-moz-keyframes boyWalk {
+}
+@-moz-keyframes boyWalk {
      0% {
          background-position:0 100%
      }
      100% {
          background-position:-400% 100%
      }
- }.boy-strip-1 {
+ }
+.boy-strip-1 {
       background-position:-800% 100%
   }
 .boy-strip-2 {
@@ -495,14 +517,16 @@ table {
     100% {
         background-position:-600% 100%
     }
-}@-moz-keyframes unwrapp {
+}
+@-moz-keyframes unwrapp {
      0% {
          background-position:-400% 100%
      }
      100% {
          background-position:-600% 100%
      }
- }.boy-hug {
+ }
+.boy-hug {
       -webkit-animation:boyHug 1s steps(3,end) 1 forwards;
       -moz-animation:boyHug 1s steps(3,end) 1 forwards
   }
@@ -513,14 +537,16 @@ table {
     100% {
         background-position:-1300% 100%
     }
-}@-moz-keyframes boyHug {
+}
+@-moz-keyframes boyHug {
      0% {
          background-position:-1000% 100%
      }
      100% {
          background-position:-1300% 100%
      }
- }.christmas-boy-head {
+ }
+.christmas-boy-head {
       left:7.85rem;
       z-index:12;
       background:url(http://img.mukewang.com/565d09870001372152510407.png) -1300% 100%;
@@ -559,7 +585,8 @@ table {
         -webkit-transform:scale3d(1,1,1);
         transform:scale3d(1,1,1)
     }
-}@keyframes bounceIn {
+}
+@keyframes bounceIn {
      20%,40%,60%,80%,from,to {
          -webkit-animation-timing-function:cubic-bezier(.215,.61,.355,1);
          animation-timing-function:cubic-bezier(.215,.61,.355,1)
@@ -591,7 +618,8 @@ table {
          -webkit-transform:scale3d(1,1,1);
          transform:scale3d(1,1,1)
      }
- }.bounceIn {
+ }
+.bounceIn {
       -webkit-animation-duration:1s;
       animation-duration:1s;
       -webkit-animation-name:bounceIn;
@@ -612,7 +640,8 @@ table {
         -webkit-transform:scale3d(.3,.3,.3);
         transform:scale3d(.3,.3,.3)
     }
-}@keyframes bounceOut {
+}
+@keyframes bounceOut {
      20% {
          -webkit-transform:scale3d(.9,.9,.9);
          transform:scale3d(.9,.9,.9)
@@ -627,7 +656,8 @@ table {
          -webkit-transform:scale3d(.3,.3,.3);
          transform:scale3d(.3,.3,.3)
      }
- }.bounceOut {
+ }
+.bounceOut {
       -webkit-animation-duration:1s;
       animation-duration:1s;
       -webkit-animation-name:bounceOut;
@@ -675,14 +705,16 @@ table {
     100% {
         background-position:-300% 100%
     }
-}@-moz-keyframes deerAnimate {
+}
+@-moz-keyframes deerAnimate {
      0% {
          background-position:0 100%
      }
      100% {
          background-position:-300% 100%
      }
- }.page-c .window {
+ }
+.page-c .window {
       left:8rem
   }
 .window-left.close,.window-right.close {
@@ -691,17 +723,19 @@ table {
 }
 @-webkit-keyframes closeWindow {
     100% {
-        -webkit-transform:scale(1) rotateY(0) rotateZ(0);
+        -webkit-transform:scale(1) rotateY(0deg) rotateZ(0deg);
         margin-right:0;
         margin-left:0
     }
-}@-moz-keyframes closeWindow {
+}
+@-moz-keyframes closeWindow {
      100% {
-         -moz-transform:scale(1) rotateY(0) rotateZ(0);
+         -moz-transform:scale(1) rotateY(0deg) rotateZ(0deg);
          margin-right:0;
          margin-left:0
      }
- }.window-close-bg,.window-scene-bg {
+ }
+.window-close-bg,.window-scene-bg {
       position:absolute;
       left:50%;
       bottom:.1rem;

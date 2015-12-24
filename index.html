@@ -3,6 +3,8 @@
 
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+          content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width" />
     <title>圣诞主题</title>
     <link rel='stylesheet' href='css/common.css' />
     <script type="text/javascript" src="js/christmas.js"></script>
@@ -89,6 +91,22 @@
         <canvas id="snowflake" style="position:absolute;z-index:999;"></canvas>
     </section>
 </section>
+<script type="text/javascript">
+    //rem设置
+    (function(doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function() {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                    //宽与高度
+                    document.body.style.height = clientWidth * (900 / 1440) + "px"
+                };
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+</script>
 </body>
 
 </html>

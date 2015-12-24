@@ -4511,5 +4511,9 @@ var Christmas = function() {
             })
 };
 $(function() {
-    Christmas()
+    var windowH = $(window).height();
+    var documentH = $(document).height();
+    var scrolTop = $(document).scrollTop();
+    console.log(windowH,documentH,scrolTop);
+    Christmas();
 });
